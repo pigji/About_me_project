@@ -1,3 +1,21 @@
-# About_me_project
+# 프론트엔트_ 포트폴리오1
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=ABOUT_ME&fontSize=90" />
+---
+
+## 프로젝트 관련
+
+<details>
+<summary>🔥구현목표🔥</summary>
+
+
+##### 
++ 반응형 프로젝트
++ 학력, 자격증 등 소개
++ 보유기술
++ 프로젝트 소개
++ 프로젝트 실행 영상
++ 개인 IT 블로그
+
+</details>
+
+
