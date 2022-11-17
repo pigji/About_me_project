@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*
+	#FFE6E6 : 연한분훈
+	#F2D1D1
+	#DAEAF1 : 연한 하늘
+	#C6DCE4
+
+*/
+
+
+/*----------------- CSS 초기화 -----------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'MICEGothic Bold';
+}
+a{ text-decoration: none; }
+li{ list-style-type: none; }
+
+/*--------------------------- 반응형 페이지 -----------------------*/
+.container{
+	overflow: auto;
+	scroll-snap-type: y mandatory; /* y축 스크롤스냅 적용 */
+	height: 100vh;
+}
+
+section{
+	scroll-snap-align: start; /* 스크롤이 멈추는 지점 */
+	height: 100vh;	/* vh : 뷰포트 높이 */
+	background-size: cover;	/* 화면의 비율 유지 -> 전체 화면 채우기 */
+	background-position: center center;	/* 가로, 세로 정렬 */
+	background-repeat: no-repeat;	/* 자동 채우기 제거 */
+}
+
+/*------------------- 헤더 ------------------------*/
+.m_body1{
+	background-color: #DAEAF1;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+.m_hd1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+}
+.m_title1{
+	border: solid 1px red;
+	font-size: 2em;
+}
+.m_title > a{
+	color: white;
+}
+#m_menu{
+	display: flex;
+}
+#m_menu > li{
+	padding: 20px 30px;
+	font-size: 20px;
+}
+li > a{
+	color: white;
+}
+
+/*--------------------- 1 구역 [ 첫번째화면 간단하게 소개 ] --------------------------*/
+.part1{
+	background-color: #FFE6E6;	/* 배경색 */
+}
+.title{
+	border: solid 1px red;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 35px;
+	padding: 15px;
+	margin: 10px;
+}
+.pp{
+	border: solid 1px red;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px;
+	margin: 10px;
+}
+
+/*--------------------- 2 구역 [ 자기소개 ] --------------------------*/
+.part2{
+	border: solid 2px blue;
+}
+.profile{ /* 프로필사진 + 자기소개 */
+	border: solid 1px black;
+	margin: 10px;
+	padding: 5px;
+}
+.p_box{
+	border: solid 1px black;
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+}
+.part2_pimg{ /* 프로필 이미지 */
+	border: solid 1px red;
+	width: 100%;
+	float: left;
+}
+.part2_pimg img{
+	width: 35%;
+	margin: 5px auto;
+	border-radius: 50px;
+}
+.about_me{	/* 자기소개 */
+	border: solid 2px blue;
+	margin: 10px;
+	width: 100%;
+}
+.privacy{	/* 개인정보 */
+	border: solid 2px black;
+	margin: 10px;
+	padding: 5px;
+}
+
+/*--------------------- 3 구역 [ 언어, 기술 스킬 ] --------------------------*/
+.part3{
+	background-color: #FFE6E6;
+}
+.all_skill{
+	border: solid 1px black;
+	margin: 10px;
+	padding: 5px; 
+}
+.skill_language{	/* 기술, 언어 목록 */
+	border: solid 1px red;
+	margin: 10px;
+	padding: 7px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.skills{
+	margin: 3rem 0px 0px;
+    display: flex;
+    flex-direction: row;
+
+}
+.skill_box{
+	transition-timing-function: ease;
+	
+	border: 0.2rem solid rgb(0, 173, 181);
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+.name{
+	transform: rotate(-10deg);
+    position: absolute;
+    left: -1.5rem;
+    top: -1.5rem;
+    border: 0.2rem solid rgb(238, 238, 238);
+    color: rgb(0, 173, 181);
+    background-color: rgb(34, 40, 49);
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.contents{
+	margin-top: 1.5rem;
+    line-height: 150%;
+}
+.content_box{
+	margin-top: 0.7rem;
+	line-height: 2rem;
+    position: relative;
+    z-index: 3;
+}
+
+
+/*--------------------- 4 구역 [ 프로젝트 ] --------------------------*/
+
+
+
+/* 미디어 쿼리 : 사이즈에 따라 css 적용*/
+@media (max-width:700px){
+	.title{
+		font-size: 4rem;
+		color: blue;
+	}
+}
+
+/*
+	HTML
+	<ul class="contoctsns">
+					<li><a href="#"> <i class="fa-brands fa-square-facebook fa-3x"></a></i> </li>
+					<li><a href="#"> <i class="fa-brands fa-square-twitter fa-3x"></a></i> </li>
+					<li><a href="#"> <i class="fa-brands fa-square-instagram fa-3x"></a></i> </li>
+	</ul>
+
+
+*/
