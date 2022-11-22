@@ -47,13 +47,26 @@
 		<div class="container"> <!-- 반응형 시작 -->
 		
 			<section class="part1"> <!-- 1구역 -->
-				<h3 class="title"> 안녕하세요! 프론트엔드 개발자 성지혜입니다. </h3>
-				<p class="pp">
-					간단한 소개글 작성하기.
-				</p>
+				<div class="part1_box">
+					<div>
+						<div>
+							<h4> 안녕하세요. 프론트엔드 개발자 성지혜입니다.</h4>
+							<p> 어쩌고 저쩌고 하고싶은 일 모두 할 수 있음 좋겠네. </p>
+						</div>
+					</div>
+						<del></del>
+					<div>
+						<div>
+							<p> 간단 소개글 작성하는 칸 </p>
+						</div>
+					</div>
+					<div class="part1_img"> <!-- 프로필 이미지 -->
+						<img src="/frontend_portfolio/img/프로필1.jpg">
+					</div>
+				</div>
 			</section>
 		
-		
+<%-- <%--	
 			<section class="part2">	<!-- 2구역 -->
 				<div class="wrapper">
 					<h3 class="title"> About me </h3>
@@ -69,15 +82,25 @@
 								</span>
 							</div>
 						</div>
-						<div class="privacy"> <!-- 개인정보 -->
-							<p> 이름 : 성지혜 </p>
-							<p> 주소지 : 경기도 안산시 상록구 </p>
-							<p> 연락처 : 010-1111-1111 </p>
-							<p> 이메일 : dd@naver.com </p>
-							<p> 이메일 : ss@gamil.com </p>
+						<div class="privacy1"> <!-- 개인정보 -->
+							<p class="c1"> 이름 : 성지혜 </p>
+							<p class="c1"> 주소지 : 경기도 안산시 상록구 성호로19길 5 </p>
+							
 						</div>
-						<div>
-							<h4> 학력 </h4>
+						<div class="privacy2">
+							<p class="c1"> 연락처 : 010-9760-2217 </p>
+							<p class="c1"> 이메일 : wjlqlrll@naver.com </p>
+							<p class="c1"> 이메일 : wjlqlrll012@gamil.com </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="part3"> <!-- 3구역 -->
+				<div class="wrapper">
+					<h3 class="title"> Resume </h3>
+					<div class="profile">
+						<h4> 학력 </h4>
 							<div> <!-- 졸업대학, 성적증명서 -->
 								<img>
 							</div>
@@ -87,13 +110,12 @@
 								<img>
 								<table></table>
 							</div>
-						</div>
 					</div>
 				</div>
-			</section>
+			</section> <!-- 3구역end -->
 			
 			
-			<section class="part3"> <!-- 3구역 -->
+			<section class="part4"> <!-- 4구역 -->
 				<h3 class="title"> Skills </h3>
 				<div class="all_skill">
 					<div class="skill_language"> <!-- 배운 기술 , 언어 -->
@@ -135,7 +157,9 @@
 							<div class="name"> 제목 </div>
 							<div class="contents">
 								<div class="content_box">
-									 웹 표준을 지키려고 노력합니다.
+									 웹 표준을 지키려고 노력합니다.<br>
+									 skfjskfjskjfkdsjfksdjfkdsssssssskfjskfjksjlsjksjksfjlsfksfks<br>
+									 sfsjfkdsssssssssssssssssssssssssssssssssssssssssssssss
 								</div>
 								<div class="content_box">
 									 열심히 합니다.
@@ -158,7 +182,7 @@
 			</section>
 			
 			
-			<section class="part4"> <!-- 4구역 -->
+			<section class="part5"> <!-- 5구역 -->
 			
 				<div>	<!-- 프로젝트1 -->
 					<h3 class="title"> 프로젝트명 </h3>
@@ -192,33 +216,33 @@
 				</div>
 				
 				<div> <!-- 프로젝트2 -->
-					<h3 class="title"> 프로젝트명 </h3>
-					<p> 프로젝트 기간~ </p>
-					<div>
+						<h3 class="title"> 레스토랑 소개 </h3>
+						<p> 프로젝트 기간~ </p>
 						<div>
-							<div> <!-- 프로젝트 이미지 -->
-								<img>
-							</div>
 							<div>
-								<div>
-									<p> 프로젝트 개발 동기 </p>
+								<div> <!-- 프로젝트 이미지 -->
+									<img>
 								</div>
 								<div>
-									<p> 프로젝트 설명 </p>
+									<div>
+										<p> 프로젝트 개발 동기 </p>
+									</div>
+									<div>
+										<p> 보험가입 게시판 </p>
+									</div>
+									<div>
+										<a href="#"><button type="button" onclick="readme()"></button></a>
+									</div>
 								</div>
+								
 								<div>
-									<a href="#"><button type="button" onclick="readme()"></button></a>
+									<ul>
+										<li> 주요 기능 </li>
+										<li> GitHub 주소 </li>
+										<li> Skills </li>
+									</ul>
 								</div>
 							</div>
-							
-							<div>
-								<ul>
-									<li> 주요 기능 </li>
-									<li> GitHub 주소 </li>
-									<li> Skills </li>
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
 				
@@ -226,7 +250,7 @@
 			
 			
 			<footer></footer>
-			
+			--%> 
 	 	</div> <!-- 반응형페이지 end -->
 		
 	</div> <!-- 전체박스권 end -->

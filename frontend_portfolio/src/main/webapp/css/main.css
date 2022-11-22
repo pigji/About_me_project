@@ -76,20 +76,23 @@ li > a{
 .part1{
 	background-color: #FFE6E6;	/* 배경색 */
 }
-.title{
-	border: solid 1px red;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 35px;
-	padding: 15px;
+.part1_box{
+	border: solid 2px black;
 	margin: 10px;
+	padding: 10px;
+	text-align: center;
 }
-.pp{
+.part1_img{ /* 프로필 이미지 */
 	border: solid 1px red;
-	margin: 0 auto;
-	text-align: center;
-	padding: 15px;
-	margin: 10px;
+	width: 50;
+	margin: 20px;
+	padding: 3px;
+}
+.part1_img img{
+	width: 25%;
+	margin: 20px;
+	border-radius: 50px;
+	
 }
 
 /*--------------------- 2 구역 [ 자기소개 ] --------------------------*/
@@ -110,11 +113,12 @@ li > a{
 .part2_pimg{ /* 프로필 이미지 */
 	border: solid 1px red;
 	width: 100%;
-	float: left;
+	margin: 20px;
+	padding: 3px;
 }
 .part2_pimg img{
 	width: 35%;
-	margin: 5px auto;
+	margin: 20px;
 	border-radius: 50px;
 }
 .about_me{	/* 자기소개 */
@@ -122,15 +126,26 @@ li > a{
 	margin: 10px;
 	width: 100%;
 }
-.privacy{	/* 개인정보 */
+.privacy1 , .privacy2{	/* 개인정보 */
 	border: solid 2px black;
-	margin: 10px;
+	margin: 10px auto;
 	padding: 5px;
+	display: flex;
+	justify-content: center;
+}
+.c1{
+	margin-right: 85px;
 }
 
-/*--------------------- 3 구역 [ 언어, 기술 스킬 ] --------------------------*/
+
+/*--------------------- 3 구역 [ 학력 ] --------------------------*/
 .part3{
 	background-color: #FFE6E6;
+}
+
+/*--------------------- 4 구역 [ 언어, 기술 스킬 ] --------------------------*/
+.part4{
+	border: solid 2px blue;
 }
 .all_skill{
 	border: solid 1px black;
@@ -185,8 +200,10 @@ li > a{
 }
 
 
-/*--------------------- 4 구역 [ 프로젝트 ] --------------------------*/
-
+/*--------------------- 5 구역 [ 프로젝트 ] --------------------------*/
+.part5{
+	background-color: #FFE6E6;
+}
 
 
 /* 미디어 쿼리 : 사이즈에 따라 css 적용*/
