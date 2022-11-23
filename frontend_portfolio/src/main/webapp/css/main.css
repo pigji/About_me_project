@@ -80,73 +80,90 @@ li > a{
 	border: solid 2px black;
 	margin: 10px;
 	padding: 10px;
+	display: inline-flex;
 	text-align: center;
-}
-.part1_img{ /* 프로필 이미지 */
-	border: solid 1px red;
-	width: 50;
-	margin: 20px;
-	padding: 3px;
-}
-.part1_img img{
-	width: 25%;
-	margin: 20px;
-	border-radius: 50px;
-	
-}
-
-/*--------------------- 2 구역 [ 자기소개 ] --------------------------*/
-.part2{
-	border: solid 2px blue;
-}
-.profile{ /* 프로필사진 + 자기소개 */
-	border: solid 1px black;
-	margin: 10px;
-	padding: 5px;
+	height: 100%;
+	width: 100%;
 }
 .p_box{
-	border: solid 1px black;
-	margin: 5px;
+	border: solid 2px blue;
+	margin: 35px;
 	padding: 5px;
-	display: flex;
+	display: grid;	/* 두 방향( 가로, 세로 ) 레이아웃 */
+    align-content: space-evenly;
+    width: 50%;
+   /* height: 100%;*/
 }
-.part2_pimg{ /* 프로필 이미지 */
+.p1_c_box{
 	border: solid 1px red;
-	width: 100%;
+	margin: 10px;
+	padding: 5px;
+}
+.p1_content{
+	border: solid 1px red;
+	margin: 10px;
+	padding: 5px;
+	width: 50%;
+    height: 100%;
+}
+
+.part1_img{ /* 프로필 이미지 */
+	border: solid 1px red;
 	margin: 20px;
 	padding: 3px;
+	
 }
-.part2_pimg img{
-	width: 35%;
-	margin: 20px;
-	border-radius: 50px;
-}
-.about_me{	/* 자기소개 */
-	border: solid 2px blue;
-	margin: 10px;
+.part1_img img{
 	width: 100%;
+	height: 100%;
 }
-.privacy1 , .privacy2{	/* 개인정보 */
+
+/*--------------------- 2  구역 [ 학력 소개 ] --------------------------*/
+.part2{
+	border: solid 3px blue;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+.part2_title{
+	border: solid 2px red;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 45px;
+}
+.part2_content{
+	border: solid 1px red;
+	margin: 5px;
+	padding: 5px;
+}
+.aboutme{
 	border: solid 2px black;
 	margin: 10px auto;
-	padding: 5px;
-	display: flex;
-	justify-content: center;
+	padding: 15px;
+	text-align: center;
 }
-.c1{
-	margin-right: 85px;
+.about1 ,.about2 span{
+	font-size: 25px;
+	padding: 10px;
+	margin-right: 70px;
 }
 
-
-/*--------------------- 3 구역 [ 학력 ] --------------------------*/
+/*--------------------- 3  구역 [ 스킬 소개 ] --------------------------*/
 .part3{
-	background-color: #FFE6E6;
+	background-color: #FFE6E6;	/* 배경색 */
+}
+.part3_box{
+	margin: 10px;
+	padding: 10px;
+	display: inline-flex;
+	text-align: center;
+	height: 100%;
+	width: 100%;
 }
 
-/*--------------------- 4 구역 [ 언어, 기술 스킬 ] --------------------------*/
-.part4{
-	border: solid 2px blue;
-}
+
+
+
 .all_skill{
 	border: solid 1px black;
 	margin: 10px;
@@ -200,10 +217,6 @@ li > a{
 }
 
 
-/*--------------------- 5 구역 [ 프로젝트 ] --------------------------*/
-.part5{
-	background-color: #FFE6E6;
-}
 
 
 /* 미디어 쿼리 : 사이즈에 따라 css 적용*/

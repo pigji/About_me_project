@@ -48,18 +48,20 @@
 		
 			<section class="part1"> <!-- 1구역 -->
 				<div class="part1_box">
-					<div>
-						<div>
-							<h4> 안녕하세요. 프론트엔드 개발자 성지혜입니다.</h4>
-							<p> 어쩌고 저쩌고 하고싶은 일 모두 할 수 있음 좋겠네. </p>
+					<div class="p_box">
+						<div class="p1_c_box">
+							<div class="p1_content">
+								<h4> 안녕하세요. 프론트엔드 개발자 성지혜입니다.</h4>
+								<p> 어쩌고 저쩌고 하고싶은 일 모두 할 수 있음 좋겠네. </p>
+							</div>
 						</div>
-					</div>
-						<del></del>
-					<div>
-						<div>
-							<p> 간단 소개글 작성하는 칸 </p>
+							<del></del>
+						<div class="p1_c_box">
+							<div class="p1_content">
+								<p> 간단 소개글 작성하는 칸 </p>
+							</div>
 						</div>
-					</div>
+					</div>	
 					<div class="part1_img"> <!-- 프로필 이미지 -->
 						<img src="/frontend_portfolio/img/프로필1.jpg">
 					</div>
@@ -94,94 +96,110 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			
-			<section class="part3"> <!-- 3구역 -->
+			</section> --%>
+	
+			<section class="part2"> <!-- 2구역 -->
 				<div class="wrapper">
-					<h3 class="title"> Resume </h3>
-					<div class="profile">
-						<h4> 학력 </h4>
-							<div> <!-- 졸업대학, 성적증명서 -->
-								<img>
+					<div class="part2_title"> <!-- 제목 -->
+						<h3> 학력 </h3>
+					</div>
+					<div class="part2_content">
+						<div class="aboutme"> <!-- 이름, 생년월일 소개 -->
+							<div class="about1">
+								<span> 😚이름 : 성지혜 </span>
+								<span> 😚생년월일 : 2000.01.22 </span>
+								<span> 😚주소지 : 경기도 안산시 상록구 </span>
 							</div>
-							
-							<h4> 자격증 및 대외활동 </h4>
+							<div class="about2">
+								<span> 😚연락처 : 010-0000-0000 </span>
+								<span> 😚이메일 : dsfsd@naver.com </span>
+								<span> 😚GitHue : sjfksjf </span>
+							</div>
+						</div>
+						<div> <!-- 학력, 자격증 소개 -->
 							<div>
-								<img>
-								<table></table>
+								테이블 삽입 -- 졸업증명서 , 성적증명서 넣는 칸
 							</div>
+							<div>
+								테이블 삽입 --  수상경력, 자격증 넣는 칸
+							</div>
+						</div>
 					</div>
 				</div>
 			</section> <!-- 3구역end -->
 			
-			
-			<section class="part4"> <!-- 4구역 -->
-				<h3 class="title"> Skills </h3>
-				<div class="all_skill">
-					<div class="skill_language"> <!-- 배운 기술 , 언어 -->
-						<div class="skill"> HTML/CSS</div>
-						<div class="skill"> JavaScript </div>
-						<div class="skill"> MySQL </div>
-						<div class="skill"> Java </div>
-						<div class="skill"> JSP </div>
-						<div class="skill"> Spring </div>
-						<div class="skill"> React </div>
-					</div>
 					
-					<div class="skills"> <!-- 4가지 스킬 -->
-						<div class="skill_box">
-							<div class="name"> HTML/CSS </div>
-							<div class="contents">
-								<div class="content_box">
-									 웹 표준을 지키려고 노력합니다.
-								</div>
-								<div class="content_box">
-									 열심히 합니다.
-								</div>
-							</div>
-						</div>
-						<div class="skill_box">
-							<div class="name"> JavaScript </div>
-							<div class="contents">
-								<div class="content_box">
-									 웹 표준을 지키려고 노력합니다.
-								</div>
-								<div class="content_box">
-									 열심히 합니다.
-								</div>
-							</div>
-						</div>
+			<section class="part3"> <!-- 3구역 -->
+				<div class="part3_box">
+					<div class="part2_title"> <!-- 제목 -->
+						<h3> 스킬 </h3>
 					</div>
-					<div class="skills">
-						<div class="skill_box">
-							<div class="name"> 제목 </div>
-							<div class="contents">
-								<div class="content_box">
-									 웹 표준을 지키려고 노력합니다.<br>
-									 skfjskfjskjfkdsjfksdjfkdsssssssskfjskfjksjlsjksjksfjlsfksfks<br>
-									 sfsjfkdsssssssssssssssssssssssssssssssssssssssssssssss
+					<div class="all_skill">
+						<div class="skill_language"> <!-- 배운 기술 , 언어 -->
+							<div class="skill"> HTML/CSS</div>
+							<div class="skill"> JavaScript </div>
+							<div class="skill"> MySQL </div>
+							<div class="skill"> Java </div>
+							<div class="skill"> JSP </div>
+							<div class="skill"> Spring </div>
+							<div class="skill"> React </div>
+						</div>
+						
+						<div class="skills"> <!-- 4가지 스킬 -->
+							<div class="skill_box">
+								<div class="name"> HTML/CSS </div>
+								<div class="contents">
+									<div class="content_box">
+										 웹 표준을 지키려고 노력합니다.
+									</div>
+									<div class="content_box">
+										 열심히 합니다.
+									</div>
 								</div>
-								<div class="content_box">
-									 열심히 합니다.
+							</div>
+							<div class="skill_box">
+								<div class="name"> JavaScript </div>
+								<div class="contents">
+									<div class="content_box">
+										 웹 표준을 지키려고 노력합니다.
+									</div>
+									<div class="content_box">
+										 열심히 합니다.
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="skill_box">
-							<div class="name"> 제목 </div>
-							<div class="contents">
-								<div class="content_box">
-									 웹 표준을 지키려고 노력합니다.
-								</div>
-								<div class="content_box">
-									 열심히 합니다.
+						<div class="skills">
+							<div class="skill_box">
+								<div class="name"> 제목 </div>
+								<div class="contents">
+									<div class="content_box">
+										 웹 표준을 지키려고 노력합니다.<br>
+										 skfjskfjskjfkdsjfksdjfkdsssssssskfjskfjksjlsjksjksfjlsfksfks<br>
+										 sfsjfkdsssssssssssssssssssssssssssssssssssssssssssssss
+									</div>
+									<div class="content_box">
+										 열심히 합니다.
+									</div>
 								</div>
 							</div>
-						</div>
-					</div> <!-- 4가지 스킬end -->
+							<div class="skill_box">
+								<div class="name"> 제목 </div>
+								<div class="contents">
+									<div class="content_box">
+										 웹 표준을 지키려고 노력합니다.
+									</div>
+									<div class="content_box">
+										 열심히 합니다.
+									</div>
+								</div>
+							</div>
+						</div> <!-- 4가지 스킬end -->
+					</div>
 				</div>
 			</section>
 			
-			
+		<%-- <%--	
 			<section class="part5"> <!-- 5구역 -->
 			
 				<div>	<!-- 프로젝트1 -->
