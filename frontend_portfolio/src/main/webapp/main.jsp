@@ -20,6 +20,7 @@
 	
 	<!-- 사용자정의 css -->
 	<link href="/frontend_portfolio/css/main.css" rel="stylesheet">
+	
 
 
 </head>
@@ -51,7 +52,7 @@
 					<div class="p_box">
 						<div class="p1_c_box">
 							<div class="p1_content">
-								<h4> 안녕하세요. 프론트엔드 개발자 성지혜입니다.</h4>
+								<p> 안녕하세요. 프론트엔드 개발자 성지혜입니다.</p>
 								<p> 어쩌고 저쩌고 하고싶은 일 모두 할 수 있음 좋겠네. </p>
 							</div>
 						</div>
@@ -68,39 +69,10 @@
 				</div>
 			</section>
 		
-<%-- <%--	
-			<section class="part2">	<!-- 2구역 -->
-				<div class="wrapper">
-					<h3 class="title"> About me </h3>
-					<div class="profile">
-						<div class="p_box">
-							<div class="part2_pimg"> <!-- 프로필 이미지  -->
-								<img src="/frontend_portfolio/img/프로필1.jpg">
-							</div>
-							<div class="about_me"> <!-- 자기소개란 -->
-								<span> 
-									안녕하세요. 저는 취준생입니다.
-									간단한 자기소개칸
-								</span>
-							</div>
-						</div>
-						<div class="privacy1"> <!-- 개인정보 -->
-							<p class="c1"> 이름 : 성지혜 </p>
-							<p class="c1"> 주소지 : 경기도 안산시 상록구 성호로19길 5 </p>
-							
-						</div>
-						<div class="privacy2">
-							<p class="c1"> 연락처 : 010-9760-2217 </p>
-							<p class="c1"> 이메일 : wjlqlrll@naver.com </p>
-							<p class="c1"> 이메일 : wjlqlrll012@gamil.com </p>
-						</div>
-					</div>
-				</div>
-			</section> --%>
 	
 			<section class="part2"> <!-- 2구역 -->
 				<div class="wrapper">
-					<div class="part2_title"> <!-- 제목 -->
+					<div class="title"> <!-- 제목 -->
 						<h3> 학력 </h3>
 					</div>
 					<div class="part2_content">
@@ -131,7 +103,7 @@
 					
 			<section class="part3"> <!-- 3구역 -->
 				<div class="part3_box">
-					<div class="part2_title"> <!-- 제목 -->
+					<div class="title"> <!-- 제목 -->
 						<h3> 스킬 </h3>
 					</div>
 					<div class="all_skill">
@@ -171,7 +143,7 @@
 						</div>
 						<div class="skills">
 							<div class="skill_box">
-								<div class="name"> 제목 </div>
+								<div class="name"> React </div>
 								<div class="contents">
 									<div class="content_box">
 										 웹 표준을 지키려고 노력합니다.<br>
@@ -199,79 +171,26 @@
 				</div>
 			</section>
 			
-		<%-- <%--	
-			<section class="part5"> <!-- 5구역 -->
-			
-				<div>	<!-- 프로젝트1 -->
-					<h3 class="title"> 프로젝트명 </h3>
-					<p> 프로젝트 기간~ </p>
-					<div>
-						<div>
-							<div> <!-- 프로젝트 이미지 -->
-								<img>
-							</div>
-							<div>
-								<div>
-									<p> 프로젝트 개발 동기 </p>
-								</div>
-								<div>
-									<p> 프로젝트 설명 </p>
-								</div>
-								<div>
-									<a href="#"><button type="button" onclick="readme()"></button></a>
-								</div>
-							</div>
-							
-							<div>
-								<ul>
-									<li> 주요 기능 </li>
-									<li> GitHub 주소 </li>
-									<li> Skills </li>
-								</ul>
-							</div>
-						</div>
+
+			<section class="part4"> <!-- 4구역 -->
+				<div class="part4_box">
+					<div class="title"> <!-- 제목 -->
+						<h3> Project </h3>
 					</div>
-				</div>
-				
-				<div> <!-- 프로젝트2 -->
-						<h3 class="title"> 레스토랑 소개 </h3>
-						<p> 프로젝트 기간~ </p>
-						<div>
-							<div>
-								<div> <!-- 프로젝트 이미지 -->
-									<img>
-								</div>
-								<div>
-									<div>
-										<p> 프로젝트 개발 동기 </p>
-									</div>
-									<div>
-										<p> 보험가입 게시판 </p>
-									</div>
-									<div>
-										<a href="#"><button type="button" onclick="readme()"></button></a>
-									</div>
-								</div>
-								
-								<div>
-									<ul>
-										<li> 주요 기능 </li>
-										<li> GitHub 주소 </li>
-										<li> Skills </li>
-									</ul>
-								</div>
-							</div>
-					</div>
-				</div>
-				
+					
+				  
 			</section>
 			
 			
 			<footer></footer>
-			--%> 
 	 	</div> <!-- 반응형페이지 end -->
 		
 	</div> <!-- 전체박스권 end -->
+	
+	<!-- 제이쿼리 -->
+	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!-- 사용자지정 -->
+	<script type="text/javascript" src="/frontend_portfolio/js/main.js"></script>
 
 </body>
 </html>
