@@ -26,7 +26,7 @@
 		<div class="hd_top"> <!-- 상단 헤더 -->
 			<div>	<!--  로고  -->
 				<span class="hd_title"> 
-					<a class="nav-link" href="/jspweb/index.jsp">Ezen Shop</a> 
+					<a class="nav-link" href="/frontend_portfolio/index.jsp"> Shop</a> 
 				</span>	
 			</div>
 			

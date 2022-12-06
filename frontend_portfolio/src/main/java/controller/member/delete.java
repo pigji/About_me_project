@@ -9,29 +9,32 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.Dao.MemberDao;
 
-/**
- * Servlet implementation class idcheck
- */
-@WebServlet("/member/idcheck")
-public class idcheck extends HttpServlet {
-		protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			
-			// 변수 요청
-			String mid = request.getParameter("mid");
-			
-			// DAO 처리
-			boolean result = MemberDao.getInstance().idcheck( mid );
-			
-			// 응답
-			response.getWriter().print( result );
+
+@WebServlet("/member/delete")
+public class delete extends HttpServlet {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		// 변수요청
+		String massword = request.getParameter("mpassword");
+		// 세션호출
+		String mid = (String)request.getSession().getAttribute("mid");
+		// DAO
+		boolean result = MemberDao.getInstance().delete(mid, massword);
+		// 반환
+		response.getWriter().print(result);
+		
 	}
+
 	private static final long serialVersionUID = 1L;
        
-   
-    public idcheck() {
+
+    public delete() {
         super();
         // TODO Auto-generated constructor stub
     }
+
+
+	
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.Dao.MemberDao;
 import model.Dto.MemberDto;
 
-@WebServlet("/signup")
+@WebServlet("/member/signup")
 public class signup extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

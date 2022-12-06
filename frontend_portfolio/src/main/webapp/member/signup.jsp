@@ -16,7 +16,7 @@
 	<%@include file="../1.header.jsp" %>
 	
 	<div class="webbox">
-		<form class="signupform" action="/jspweb2/tsignup" method="post">
+		<form class="signupform" action="/frontend_portfolio/member/signup" method="post">
 			<h2 class="pagetitle"> ♧ 회원가입 페이지 ♧ </h2>
 			<h3 class="parttitle"> 기본정보 </h3>
 			
@@ -75,7 +75,7 @@
 			
 			<span class="confirmbox">
 				<textarea readonly="readonly"> 
-					<p>제 1장 총칙
+					<p> 제 1장 총칙
 						제 1 조(목적)
 						본 약관은 국가공간정보포털 웹사이트(이하 "국가공간정보포털")가 제공하는 모든 서비스(이하 "서비스")의 이용조건 및 절차, 회원과 국가공간정보포털의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.
 						제 2 조(약관의 효력과 변경)

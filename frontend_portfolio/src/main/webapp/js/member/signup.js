@@ -3,11 +3,8 @@ alert("회원가입")
 // 0. 아이콘
 let sicon = '<i class="fas fa-check-circle"></i>'
 let bicon = '<i class="fas fa-ban"></i>'
-
-// class가 col3 이면 모두 호출 [ ALL -> 배열 ]
-let col3 = document.querySelectorAll('.col3')
-
-
+// 1. col3 div 모두 가져오기 
+let col3 = document.querySelectorAll('.col3')	// class가 col3 이면 모두 호출 [ ALL -> 배열 ]
 /*----- 아이디 ------------ */
 function mevent1(){											// 아이디를 입력[keyup]하면 이벤트 발생 = 함수 실행
 	// alert( '아이디입력' )
@@ -26,6 +23,7 @@ function mevent1(){											// 아이디를 입력[keyup]하면 이벤트 발�
 		
 	}else{	 col3[0].innerHTML = bicon+'소문자/숫자 조합 5~20글자' } // 정규표현식이 다르면
 }
+
 /*----- 비밀번호 ------------ */
 function mevent2(){
 	let mpassword = document.querySelector("#mpassword").value
@@ -36,6 +34,7 @@ function mevent2(){
 		col3[1].innerHTML = bicon+'영대소문자/숫자 조합 8~20글자'
 	}
 }
+
 /*----- 비밀번호 확인 ------------ */
 function mevent3(){
 	let mpassword = document.querySelector("#mpassword").value
@@ -45,6 +44,7 @@ function mevent3(){
 	else if( mpasswordconfirm != mpassword ) { col3[1].innerHTML = bicon+'비밀번호 서로 다릅니다.' } // 두 비밀번호가 다르면
 	else{ col3[1].innerHTML = sicon; mevent2(); }	// 정규표현식 맞고 두 비밀번호 맞으면
 }
+
 /*----- 이름 ------------ */
 function mevent4(){
 	let mname = document.querySelector("#mname").value
@@ -53,6 +53,7 @@ function mevent4(){
 	if( mnamej.test( mname) ){ col3[2].innerHTML = sicon;  }
 	else{ col3[2].innerHTML = bicon+'영대소문자 혹은 한글 2~20글자'}
 }
+
 /*----- 전화번호 ------------ */
 function mevent5(){
 	let mphone = document.querySelector("#mphone").value
@@ -60,6 +61,7 @@ function mevent5(){
 	if( mphonej.test(mphone) ){ col3[3].innerHTML = sicon; }
 	else{ col3[3].innerHTML = bicon+'지역번호-XXXX-XXXX 형식 입력해주세요' }
 }
+
 /*----- 이메일 ------------ */
 function mevent6(){
 	let memail = document.querySelector("#memail").value
@@ -79,11 +81,23 @@ function mevent6(){
 	}
 	else{ col3[4].innerHTML = bicon+' 이메일 형식으로 입력해주세요 ' }
 }
+
 /*----- 주소 ------------ */
 let sample4_postcode =  document.querySelector("#sample4_postcode")
 let sample4_roadAddress =  document.querySelector("#sample4_roadAddress")
 let sample4_jibunAddress =  document.querySelector("#sample4_jibunAddress")
 let sample4_detailAddress =  document.querySelector("#sample4_detailAddress")
+
+function addresscheck( 이벤트객체 ){
+	let 입력된값 = 이벤트객체.currentTarget.value;
+	if( 입력된값.indexOf(',') !== -1 ){ col3[5].innerHTML = bicon+' 주소에 ,[쉼표] 입력 불가능' }
+	else{ col3[5].innerHTML = sicon; } 
+}
+
+sample4_postcode.addEventListener( 'change' ,  addresscheck )	// change 된 객체의 정보를 addresscheck함수에게 인수로 전달
+sample4_roadAddress.addEventListener( 'change' ,  addresscheck )
+sample4_jibunAddress.addEventListener( 'change' ,  addresscheck )
+sample4_detailAddress.addEventListener( 'change' ,  addresscheck )
 
 /* ------ 전송 버튼 눌렀을때 ------- */
 function formsubmit(){
@@ -95,9 +109,7 @@ function formsubmit(){
 	if( document.querySelector('#confrim1').checked == false ){ alert(' 이용약관에 동의해주세요'); 		return false; }
 	if( document.querySelector('#confrim2').checked == false ){ alert(' 개인정보 수집 동의해주세요'); 	return false; }
 	document.querySelector('.signupform').submit();	// 해당 form 전송 // 폼객체.submit()
-	// document.querySelector('.signupform') : signupform 이라는 class 를 가지고 있는 tag 호출
 }
-
 
 
 

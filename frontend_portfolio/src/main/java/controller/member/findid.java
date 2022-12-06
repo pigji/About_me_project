@@ -10,28 +10,33 @@ import javax.servlet.http.HttpServletResponse;
 import model.Dao.MemberDao;
 
 /**
- * Servlet implementation class idcheck
+ * Servlet implementation class findid
  */
-@WebServlet("/member/idcheck")
-public class idcheck extends HttpServlet {
+@WebServlet("/member/findid")
+public class findid extends HttpServlet {
 		protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+			// 1. 변수 요청 
+			request.setCharacterEncoding("UTF-8"); // 요청시 한글 인코딩 
+			String mname = request.getParameter("mname");
+			String memail = request.getParameter("memail");
 			
-			// 변수 요청
-			String mid = request.getParameter("mid");
+			// 2. DB처리 
+			String result = MemberDao.getInstance().findid(mname, memail);
 			
-			// DAO 처리
-			boolean result = MemberDao.getInstance().idcheck( mid );
-			
-			// 응답
+			// 3. 응답 
 			response.getWriter().print( result );
 	}
+	
 	private static final long serialVersionUID = 1L;
        
-   
-    public idcheck() {
+  
+    public findid() {
         super();
         // TODO Auto-generated constructor stub
     }
+
+
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
