@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* CSS 기본 설정 */
+*{ margin: 0; padding: 0; font-family: "맑은 고딕" }
+a{ text-decoration: none; color: block; }
+a:hover{ order: #eeeeee; }
+li{ list-style-type: none; }
+
+/* 페이지 실제 사이즈 */
+.box{ width: 1200px; margin: 0 auto; position: relative; }
+
+/* ------------------------ 헤더 ---------------------------*/
+#header{ height: 100px; } /* 높이 */
+.logo{ position: absolute; top:20px; left: 20px; }
+.logo_impact{ color: blue; font-weight: bold; }
+.top_menu{ position: absolute; right: 20px; top:30px; }
+.top_menu li{ display: inline; margin-left: 20px; }
+
+/* 메인 이미지 */
+#main_img{
+	clear: both;
+	height: 350px;
+	background-image: url("/frontend_portfolio/image/sub_reservation.jpg");
+	background-repeat: no-repeat;	/* 자동채우기 거절 */
+	background-position: top center;	/* 박스권 배경이미지 정렬 */
+}
+.main_text{
+	height: 350px;
+	padding-top: 150px;
+}
+.main_text h3{
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+.main_text p{
+	text-align: center;
+	font-size: 15px;
+	color: white;
+}
+
+/*---- main con s ----*/
+
+#main_con{
+	clear: both;
+	position: relative;
+	margin: 0 auto;
+	left: 22%;
+}
+.main_cbox{
+	width: 1200px;
+	height: 700px;
+}
+.cbox_01{
+	float:left;
+	width: 700px;
+	height: 600px;
+	background-color: #fcf9ea;
+	margin: 50px 0;
+	position: static;
+}
+.cbox_02{
+	float:left;
+	width: 400px;
+	margin: 50px 0;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.cbox_01_text01, .cbox_01_text02{
+	text-align: center;
+}
+.cbox_01_text01 {
+	padding-top: 40px;
+}
+.cbox_01_text02{
+	padding-top: 20px;
+}
+.cbox_01 .cbox_tb{
+	border: solid 1px black;
+	width: 600px;
+	height: 430px;
+	margin-top: 20px;
+}
+.cbox_tb_tr{
+	border: solid 1px red;
+	width: 60px;
+}
+.cbox_01 .text_red{
+	color: red;
+	font-weight: bold;
+}
+.cbox_tb_tr01 td{
+	height: 30px;
+	text-align: center;
+}
+.cbox_tb_tr02 td, .cbox_tb_tr03 td, .cbox_tb_tr04 td,
+.cbox_tb_tr05, .cbox_tb_tr06 td{
+	padding-left: 5px;
+	width: 80px;
+	height: 80px;
+}
+
+.cbox_tb td{
+	border: solid 2px black;
+}
+
+.cbox_tb{
+	border-collapse: collapse;
+}
+
+/* 예약안내 오른쪽 */
+.cbox_02_01 h3, .cbox_02_02 h3{
+	font-weight: bold;
+	font-size: 20px;
+	border-left: solid 5px gray;
+	padding-left: 10px;	
+}
+.cbox_02_02{
+	margin-top: 20px;
+}
+.cbox_02_02 p{
+	padding-top: 20px;
+	color: green;
+}
+
+.cbox_02 li{
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+/* -------------------------- 푸터 ----------------------------*/
+#footer{ 
+	clear: both;  background-color:#292c32; color: white;   
+	padding: 20px; height: 250px;
+}
+.ft_item{ float: left; width: 380px; margin-top: 50px; }
+.ft_item li{ display: inline; }
+.ft_item ul{ margin-bottom: 20px; }
+.ft_sns{ float: right; width: 380px; margin-top: 50px; text-align: center; }
+.ft_sns img{ margin-left: 10px;}
