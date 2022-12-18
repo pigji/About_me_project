@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/*
+	식별자{ 속성 = 값 }
+		0. *		*{}			: 모든곳에 적용
+		1. class	.클래스명{}	: 해당 클래스만
+		2. id		#id{}		: 해당 아이디만
+		3. name
+		4. 태그명
+	하위 식별자 [ 띄어쓰기 구분 ]
+		식별자 하위식별자{ }
+	복수 식별자선택
+		식별자, 식별자 [ 쉼표(,) 구분 ]
+	n번째 하위 식별자 선택
+		식별자 : nth-child( n )	: 복수 하위 식별자중 n번째 식별자 선택
+*/
+
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{	/* 기본값 초기화 */
+	margin: 0;				/* 안쪽여백 */
+	padding: 0;				/* 바깥여백 */
+	text-decoration: none;	/* 텍스트 밑줄제거 */
+	list-style: none;		/* 글머리기호 제거 */
+	color: black;			/* 폰트색상 */
+	font-family: '맑은 고딕';
+}
+
+/*---------------------- 상단 헤더 ----------------------------------*/
+.webbox{
+	width: 1200px;			/* 가로길이 */
+	margin: 0 auto;			/* 박스 가운데정렬 */
+}
+.hd_top{
+	display: flex;			/* 자식요소 가로배치 */
+	justify-content: space-between;
+	margin: 10px 0 20px 0px;	/* 위 오른쪽 아래쪽 왼쪽 [시계방향] */
+}
+.hd_sub{
+	display: flex;
+	font-size: 12px;
+}
+.hd_sub li{
+	margin-left: 20px;
+}
+.hd_title a{
+	font-family: 'ChosunCentennial';
+	font-size: 40px;
+}
+
+/*--------------------- 하단 헤더 ----------------------------------*/
+.hd_menu{
+	display: flex;
+	justify-content: space-between;
+}
+.searchbox input{
+	border: none;	/* 테두리제거 */
+}
+.searchbox span{
+	border-bottom: solid 2px black;
+	margin: 0px 20px 0px 150px;
+}
+.fa-search, .fa-shopping-cart{
+	font-size: 20px;
+}
+
+.hd_menu li:nth-child(1) a{ color: red; font-weight: bold; }
+.hd_menu li:nth-child(2) a{ color: blue; font-weight: bold; }
+.hd_menu li:nth-child(3) a{ color: green; font-weight: bold; }
+.hd_menu li:nth-child(4) a{ color: orange; font-weight: bold; }

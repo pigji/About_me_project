@@ -76,62 +76,102 @@ li > a{
 .part1{
 	background-color: #FFE6E6;	/* 배경색 */
 }
-.title{
-	border: solid 1px red;
-	margin: 0 auto;
+.part1_box{
+	border: solid 2px black;
+	margin: 20px;
+	padding: 45px;
+	display: inline-flex;
+	/*justify-content: space-between;*/
 	text-align: center;
-	font-size: 35px;
-	padding: 15px;
-	margin: 10px;
-}
-.pp{
-	border: solid 1px red;
-	margin: 0 auto;
-	text-align: center;
-	padding: 15px;
-	margin: 10px;
-}
-
-/*--------------------- 2 구역 [ 자기소개 ] --------------------------*/
-.part2{
-	border: solid 2px blue;
-}
-.profile{ /* 프로필사진 + 자기소개 */
-	border: solid 1px black;
-	margin: 10px;
-	padding: 5px;
+	height: 100%;
+	width: 100%;
 }
 .p_box{
-	border: solid 1px black;
-	margin: 5px;
-	padding: 5px;
-	display: flex;
-}
-.part2_pimg{ /* 프로필 이미지 */
-	border: solid 1px red;
-	width: 100%;
-	float: left;
-}
-.part2_pimg img{
-	width: 35%;
-	margin: 5px auto;
-	border-radius: 50px;
-}
-.about_me{	/* 자기소개 */
 	border: solid 2px blue;
-	margin: 10px;
-	width: 100%;
+	margin: 35px 35px 0px 35px;
+	padding: 5px;
+	display: grid;	/* 두 방향( 가로, 세로 ) 레이아웃 */
+    align-content: space-evenly;
+    width: 50%;
+   /* height: 100%;*/
 }
-.privacy{	/* 개인정보 */
-	border: solid 2px black;
+.p1_c_box{
+	border: solid 1px red;
 	margin: 10px;
 	padding: 5px;
+}
+.p1_content{
+	border: solid 1px red;
+	padding: 5px;
+	width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 35px;
 }
 
-/*--------------------- 3 구역 [ 언어, 기술 스킬 ] --------------------------*/
-.part3{
-	background-color: #FFE6E6;
+.part1_img{ /* 프로필 이미지 */
+	border: solid 1px red;
+	margin: 35px;
+	padding: 13px;
+	
 }
+.part1_img img{
+	width: 500px;
+	height: 650px;
+	text-align: center;
+	margin: 5px auto;
+}
+
+/*--------------------- 2  구역 [ 학력 소개 ] --------------------------*/
+.part2{
+	border: solid 3px blue;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+.title{
+	border: solid 2px red;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 45px;
+}
+.part2_content{
+	border: solid 1px red;
+	margin: 5px;
+	padding: 5px;
+}
+.aboutme{
+	border: solid 2px black;
+	margin: 10px auto;
+	padding: 15px;
+	text-align: center;
+}
+.about1 ,.about2 span{
+	font-size: 25px;
+	padding: 10px;
+	margin-right: 70px;
+}
+
+/*--------------------- 3  구역 [ 스킬 소개 ] --------------------------*/
+.part3{
+	background-color: #FFE6E6;	/* 배경색 */
+}
+.part3_box{
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+.title{
+	border: solid 2px red;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 45px;
+}
+
+
+
 .all_skill{
 	border: solid 1px black;
 	margin: 10px;
@@ -184,8 +224,117 @@ li > a{
     z-index: 3;
 }
 
+/*--------------------- 4  구역 [ 프로젝트 소개 ] --------------------------*/
+.part4{
+	border: solid 3px blue;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+.title{
+	border: solid 2px red;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 45px;
+}
 
-/*--------------------- 4 구역 [ 프로젝트 ] --------------------------*/
+
+
+
+/*--------------------- 4  구역 [ 슬라이드 ] --------------------------*/
+
+.wrapper {
+    max-width:1200px;
+    width:75%;
+    margin:0 auto;
+}
+
+.swiper {
+    max-width: 480px;
+    width:100%;
+    height: 360px;
+    position: relative;
+    overflow: visible;
+}
+
+.swiper-slide {
+    max-width: 480px;
+    width:100%;
+    height:360px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 10px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    width: 480px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**/
+
+.swiper-slide {opacity:0.5; transition:opacity 0.5s;}
+.swiper-slide-active {opacity:1;}
+
+.changing {
+    transition:opacity 0.3s;
+    pointer-events:none;
+  }
+  
+  .changed {  
+    transition:none;
+  }
+
+
+/* pagination */
+.mySwiper .swiper-pagination {
+    position: absolute;
+    bottom: -30px;
+    text-align:left;
+    
+}
+
+/* nav btn*/
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+    top: 50%;
+}
+
+.mySwiper .swiper-button-prev {
+    transform:translateX(-200%);
+}
+.mySwiper .swiper-button-next {
+    transform:translateX(200%);
+}
+
+.custom-fraction {text-align:right; margin:15px 5px 0 0;}
+.btn-wrapper {
+    margin-top:50px;
+}
+
+
+
+
+
+
 
 
 

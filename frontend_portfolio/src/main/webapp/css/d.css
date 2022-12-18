@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/*--------------------- 2 구역 [ 자기소개 ] --------------------------*/
+.part2{
+	border: solid 2px blue;
+}
+.profile{ /* 프로필사진 + 자기소개 */
+	border: solid 1px black;
+	margin: 10px;
+	padding: 5px;
+}
+.p_box{
+	border: solid 1px black;
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+}
+.part2_pimg{ /* 프로필 이미지 */
+	border: solid 1px red;
+	width: 100%;
+	margin: 20px;
+	padding: 3px;
+}
+.part2_pimg img{
+	width: 35%;
+	margin: 20px;
+	border-radius: 50px;
+}
+.about_me{	/* 자기소개 */
+	border: solid 2px blue;
+	margin: 10px;
+	width: 100%;
+}
+.privacy1 , .privacy2{	/* 개인정보 */
+	border: solid 2px black;
+	margin: 10px auto;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+}
+.c1{
+	margin-right: 85px;
+}
+
+
+/*--------------------- 3 구역 [ 학력 ] --------------------------*/
+.part3{
+	background-color: #FFE6E6;
+}
+
+/*--------------------- 4 구역 [ 언어, 기술 스킬 ] --------------------------*/
+.part4{
+	border: solid 2px blue;
+}
+.all_skill{
+	border: solid 1px black;
+	margin: 10px;
+	padding: 5px; 
+}
+.skill_language{	/* 기술, 언어 목록 */
+	border: solid 1px red;
+	margin: 10px;
+	padding: 7px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.skills{
+	margin: 3rem 0px 0px;
+    display: flex;
+    flex-direction: row;
+
+}
+.skill_box{
+	transition-timing-function: ease;
+	
+	border: 0.2rem solid rgb(0, 173, 181);
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+.name{
+	transform: rotate(-10deg);
+    position: absolute;
+    left: -1.5rem;
+    top: -1.5rem;
+    border: 0.2rem solid rgb(238, 238, 238);
+    color: rgb(0, 173, 181);
+    background-color: rgb(34, 40, 49);
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.contents{
+	margin-top: 1.5rem;
+    line-height: 150%;
+}
+.content_box{
+	margin-top: 0.7rem;
+	line-height: 2rem;
+    position: relative;
+    z-index: 3;
+}
+
+
+/*--------------------- 5 구역 [ 프로젝트 ] --------------------------*/
+.part5{
+	background-color: #FFE6E6;
+}
