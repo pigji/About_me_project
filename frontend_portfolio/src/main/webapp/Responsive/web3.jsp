@@ -157,9 +157,9 @@
 					</p>
 				</div>
 				<div class="ft_sns">
-					<a href="#"><img src="/frontend_portfolio/image/facebook.png"></a>
-					<a href="#"><img src="/frontend_portfolio/image/blog.png"></a>
-					<a href="#"><img src="/frontend_portfolio/image/instagram.png"></a>
+					<a href="https://ko-kr.facebook.com/"><img src="/frontend_portfolio/image/facebook.png"></a>
+				<a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"><img src="/frontend_portfolio/image/blog.png"></a>
+				<a href="https://www.instagram.com/"><img src="/frontend_portfolio/image/instagram.png"></a>
 				</div>
 			</div>
 		</div>
